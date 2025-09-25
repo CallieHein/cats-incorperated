@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Cats Incorperated</title>
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
 
-  <body>
-    <nav>
-      <img class="logo" src="./resources/Cat-Icon-PNG-Pic.png"></img>
-      <h1>Cats Incorperated</h1>
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Cats Incorperated</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href=""><img class="logo" src="./resources/Cat-Icon-PNG-Pic.png"></img></a>
+      <h1>Cats Incorporated</h1>
       <ul>
-        <li><a href="#ourcats">Our Cats</a></li>
-        <li><a>About Us</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#ourcats">Our Team</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-    <main>
-      <div class="ourcats" id="ourcats">
-        <h2>Our Cats</h2>
-        <div class="images">
-          <figure>
-            <img src="./resources/Scratchy.jpg">
-            <figcaption>Scratchy, our CEO</figcaption>
-          </figure>
-          <figure>
-            <img src="./resources/whiskers.jpg">
-            <figcaption>Whiskers, our Accountant</figcaption>
-          </figure>
-          <figure>
-            <img src="./resources/cat-therine.jpeg">
-            <figcaption>Cat-therine, our Receptionist</figcaption>
-          </figure>
+  </nav>
+  <main>
+    <div class="ourcats" id="ourcats">
+      <h2>Our Cats</h2>
+        <div class="team-list">
+          <div class="team-card">
+            <img src="./resources/Scratchy.jpg" alt="Scratchy">
+            <h3>Scratchy</h3>
+            <p>Chief Executive Officer (CEO)</p>
+          </div>
+          <div class="team-card">
+            <img src="./resources/whiskers.jpg" alt="Whiskers">
+            <h3>Whiskers</h3>
+            <p>Accountant</p>
+          </div>
+          <div class="team-card">
+            <img src="./resources/cat-therine.jpeg" alt="Cat-therine">
+            <h3>Cat-therine</h3>
+            <p>Receptionist</p>
+          </div>
+        </div>
+    </div>
+      <div class="services" id="services">
+        <h2>Our Legal Services</h2>
+        <div class="service-list">
+          <div class="service-card">
+            <img src="./resources/Cat-Icon-PNG-Pic.png" alt="Consultation" />
+            <h3>Legal Consultation</h3>
+            <p>Expert advice for all your legal needs, delivered with a purr-sonal touch.</p>
+          </div>
+          <div class="service-card">
+            <img src="./resources/Cat-Icon-PNG-Pic.png" alt="Representation" />
+            <h3>Court Representation</h3>
+            <p>Professional representation in court, ensuring your case is heard and respected.</p>
+          </div>
+          <div class="service-card">
+            <img src="./resources/Cat-Icon-PNG-Pic.png" alt="Contracts" />
+            <h3>Contract Review</h3>
+            <p>Thorough review and drafting of contracts to protect your interests.</p>
+          </div>
         </div>
       </div>
-      <div class="aboutus" id="aboutus">
-        <h2>About our Paw Firm</h2>
+    <div class="aboutus" id="aboutus">
+      <h2>About our Paw Firm</h2>
+      <p>
+        At Cats Incorporated, our mission is to provide top-tier legal services with a feline touch. Our dedicated team of cat attorneys ensures every client receives compassionate, thorough, and pawsitive representation. We advocate for justice, one purr at a time.
+      </p>
+    </div>
+      <div class="contactus" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
